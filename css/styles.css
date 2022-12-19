@@ -64,7 +64,6 @@ body{
     
 }
 
-.header-block  ul,
 .header-connection{
     display: flex;
     align-items: center;
@@ -198,12 +197,11 @@ body{
     clip-path: inset(50%);
     margin: -1px;
 }
-.feature {
-    margin: 0; 
-    padding: 0; 
-}
 .feature-list{
     display: flex;
+    align-items: flex-start;
+    margin: 0;
+        padding: 0;
 }
 .feature-list > .feature-list-itme{
     flex-basis: calc((100%-3*24px)/4);  
@@ -233,6 +231,11 @@ body{
     gap: 24px;
 }
 
+.work-list{
+    margin: 0;
+    padding: 0;
+}
+ 
 .work-title{
    font-weight: 700;
    font-size: 36px;
@@ -262,6 +265,8 @@ body{
 .team-list{
     display: flex;
     gap: 24px;
+    margin: 0;
+    padding: 0;
 }
 .team-container{
     text-align: center;
