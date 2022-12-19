@@ -199,9 +199,8 @@ body{
 }
 .feature-list{
     display: flex;
-    align-items: flex-start;
     margin: 0;
-        padding: 0;
+    padding: 0;
 }
 .feature-list > .feature-list-itme{
     flex-basis: calc((100%-3*24px)/4);  
