@@ -81,7 +81,7 @@ img {
     color: var(--color-accent);
 }
 .header-link:focus,
-.header-contact:hover{
+.header-contact:focus{
     color: var(--color-accent);
 }  
 .header-list {
@@ -121,10 +121,11 @@ img {
 .header-contact{
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--color-block);
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
+    display: block;
     
 }
 
@@ -203,6 +204,8 @@ img {
     padding-left: 16px;
     padding-bottom: 32px;
     padding-top: 32px;
+    border: 1px solid var(--color-footer);
+    border-top: none;
 }
 
 .cells-info {
@@ -234,8 +237,6 @@ img {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.16;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-btm);
