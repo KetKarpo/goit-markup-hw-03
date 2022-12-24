@@ -119,12 +119,12 @@ img{
     padding-bottom: 24px;
    
 }
-.header-item:hover,
+.header-link:hover,
 .header-contact:hover{
     color: var(--color-accent);
 }
 .header-contact:focus,
-.header-item:focus{
+.header-link:focus{
     color: var(--color-accent);
 }
 .header-contact{
