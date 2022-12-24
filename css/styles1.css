@@ -34,14 +34,14 @@ body{
     font-family: inherit;
     text-decoration: none;
 }
- .h1,
+ h1,
  h2,
  h3,
  h4 {
     margin: 0;
  }
 
-.img {
+img {
     max-width: 100%;
     height: auto;
  }
@@ -77,13 +77,11 @@ body{
     margin-right: 76px;
 }
 .header-link:hover,
-.header-phone:hover,
-.header-mail:hover{
+.header-contact:hover{
     color: var(--color-accent);
 }
 .header-link:focus,
-.header-mail:focus,
-.header-phone:focus{
+.header-contact:hover{
     color: var(--color-accent);
 }  
 .header-list {
@@ -97,38 +95,42 @@ body{
 .contacts {
     margin-left: 40px;
 }
-.header-item{
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
+
 .mail{
     margin-left: 40px;
 }
 
-
 .header-page {
     background: var(--color-light);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-
 }
 
 
-.header-link {
+.header-link{
     font-weight: 600;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-main);
+    display: block;
+    
 }
-.header-phone, .header-mail{
+.header-link{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.header-contact{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
- 
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
 }
 
 .filter-list{
-    margin-top:  96px;
-    margin-bottom: 120px; 
+    padding-top:  96px;
+    padding-bottom: 120px; 
   
 }
 .filter,.cells-title {
@@ -152,7 +154,7 @@ body{
     
 }
 
-.btn {
+.btn{
     font-family: inherit;
     font-weight: 500;
     line-height: 1.5;
@@ -167,18 +169,16 @@ body{
     padding: 12px 24px;
     
 }
-.click-btn:active{
-    background:var(--color-active);
-    color: var(--color-footer);
 
-}
-.click-btn:focus,
-.clck-btn:hover{
+.clck-btn:hover,
+.click-btn:focus{
     background: var(--color-btm);
     color: var(--color-accent);
-
 }
-
+.click-btn:active {
+    background: var(--color-active);
+    color: var(--color-footer);
+}
 
 .item{
     list-style: none;
@@ -195,13 +195,14 @@ body{
 .cells-list{
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
     
 }
 .cells{
     padding-left: 16px;
     padding-bottom: 32px;
-    margin-top: 32px;
+    padding-top: 32px;
 }
 
 .cells-info {
