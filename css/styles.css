@@ -22,11 +22,11 @@ body{
 
 }
 
-.h1, h2, h3, h4{
+h1, h2, h3, h4{
     margin: 0;
 }
 
-.img{
+img{
     display: block;
     max-width: 100%;
     height: auto;
@@ -103,8 +103,7 @@ body{
 
 .header-list{
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
     
 }
 
@@ -116,23 +115,25 @@ body{
     text-decoration: none;
     color: var(--color-main);
     display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
    
 }
-.header-link:hover,
-.header-phone:hover,
-.header-mail:hover{
+.header-item:hover,
+.header-contact:hover{
     color: var(--color-accent);
 }
-.header-link:focus,
-.header-mail:focus,
-.header-phone:focus{
+.header-contact:focus,
+.header-item:focus{
     color: var(--color-accent);
 }
-.header-phone, .header-mail{
+.header-contact{
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-block);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .mail-link{
     margin-left: 40px;
@@ -140,7 +141,7 @@ body{
 
 /*-----------Advantage------------ */
 
-#advantage{
+.advantage{
     background-color: var(--color-main);
 }
 
@@ -208,17 +209,18 @@ body{
     margin: -1px;
 }
 .feature {
-    margin-top: 120px;
+    padding-top: 120px;
 }
 .feature-list{
     display: flex;
     margin: 0;
     padding: 0;
+    gap: 24px;
 
 }
 .feature-list > .feature-list-itme{
     flex-basis: calc((100% - 3 * 24px) / 4);
-    margin-left: 24px;
+   
     
 }
 
@@ -263,14 +265,18 @@ body{
    
 }
 .work {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 /* -------------Team---------------- */
 #team{
     background-color:  var(--color-logo);
     
 
+}
+.team-group{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .team-title{
    font-weight: 700;
@@ -281,7 +287,7 @@ body{
    color: var(--color-main);
    text-align: center;
    margin-bottom: 72px;
-   padding-top: 120px;
+   
 }
 
 .team-list{
@@ -314,9 +320,6 @@ body{
 }
 .team-foto{
     background-color: var(--color-light);
-}
-.team-list{
-    padding-bottom: 120px;
 }
 
 /* ------------Footer----------------*/
